@@ -1,0 +1,73 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.ChatRoom" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="colorSecondary">@color/colorWhite</item>
+        <item name="colorSecondaryVariant">@color/colorGray</item>
+
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
+
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="textInputStyle">@style/CustomEditTextStyle</item>
+
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.App.MaterialAlertDialog</item>
+        <item name="textAppearanceButton">@style/CustomButton</item>
+        <!-- toolbar colors -->
+        <item name="colorSurface">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorAccent</item>
+        <item name="colorOnSecondary">@color/colorWhite</item>
+        <item name="colorOnBackground">@color/colorWhite</item>
+
+
+        <item name="colorControlActivated">@android:color/white</item>
+
+    </style>
+
+    <style name="CustomEditTextStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorWhite</item>
+        <item name="hintTextColor">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="colorPrimary">@color/colorWhite</item>
+    </style>
+
+    <style name="ThemeOverlay.App.MaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorSurface">@color/colorPrimary</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/TitleTextStyle</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/BodyTextStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+    </style>
+
+    <style name="TitleTextStyle" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="BodyTextStyle" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="rippleColor">@color/colorAccent</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="rippleColor">@color/colorRed</item>
+    </style>
+
+    <style name="CustomButton" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/drawable/background_button_circular.xml" value="0.3828125" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/drawable/background_edittext.xml" value="0.3828125" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/drawable/background_textview.xml" value="0.3828125" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/drawable/cursor_color.xml" value="0.10729166666666666" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/drawable/ic_add.xml" value="0.3828125" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/drawable/ic_attachment.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/drawable/ic_back.xml" value="0.3828125" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/drawable/ic_location.xml" value="0.3828125" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/drawable/ic_person_outline.xml" value="0.3828125" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/drawable/ic_person_pin.xml" value="0.3828125" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/drawable/ic_send.xml" value="0.3828125" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/font/nunito.xml" value="0.23541666666666666" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/font/nunito_bold.xml" value="0.23541666666666666" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/font/nunito_semibold.xml" value="0.23541666666666666" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/layout/fragment_chatroom.xml" value="0.25" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/layout/fragment_chatroom_details.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/layout/fragment_chatroom_map.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/layout/fragment_chats.xml" value="0.32407407407407407" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/layout/fragment_login.xml" value="0.1" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/layout/fragment_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/layout/fragment_register.xml" value="0.33" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/layout/layout_chat_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/layout/layout_create_chatroom.xml" value="0.25" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/layout/layout_item_chatroom.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/layout/layout_item_chatroom_user.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Bashar Alhato/AndroidStudioProjects/ChatRoom/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22135416666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

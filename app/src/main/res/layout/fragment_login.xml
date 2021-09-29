@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilLoginPassword" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Log In"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/tilLoginEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilLoginEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:textColorHint="@color/colorWhite"
+        android:theme="@style/CustomEditTextStyle"
+        app:hintTextColor="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/tilLoginPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLogin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLoginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorWhite" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilLoginPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@color/colorWhite"
+        android:theme="@style/CustomEditTextStyle"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/colorWhite"
+        app:hintTextColor="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogIn"
+        app:layout_constraintEnd_toEndOf="@+id/tilLoginEmail"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tilLoginEmail"
+        app:layout_constraintTop_toBottomOf="@+id/tilLoginEmail"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/nunito_semibold"
+        android:padding="12dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/tilLoginPassword"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tilLoginPassword"
+        app:layout_constraintTop_toBottomOf="@+id/tilLoginPassword" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogIn">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First time here? " />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvMoveToSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="New Account"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

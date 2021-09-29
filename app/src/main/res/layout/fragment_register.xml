@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/tvMoveToLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilRegisterConfirmPassword" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/create_account_message"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnChooseImg"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"
+        android:background="@drawable/background_button_circular"
+        android:src="@drawable/ic_attachment"
+        app:layout_constraintEnd_toEndOf="@+id/tvCreateAccount"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvCreateAccount"
+        app:layout_constraintTop_toBottomOf="@+id/tvCreateAccount" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/upload_pic"
+        app:layout_constraintBottom_toBottomOf="@+id/btnChooseImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnChooseImg"
+        app:layout_constraintTop_toTopOf="@+id/btnChooseImg" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilRegisterUsername"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:textColorHint="@color/colorWhite"
+        android:theme="@style/CustomEditTextStyle"
+        app:hintTextColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChooseImg">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRegisterUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/username_hint"
+            android:inputType="text"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilRegisterEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@color/colorWhite"
+        android:theme="@style/CustomEditTextStyle"
+        app:hintTextColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@id/tilRegisterUsername"
+        app:layout_constraintStart_toStartOf="@+id/tilRegisterUsername"
+        app:layout_constraintTop_toBottomOf="@+id/tilRegisterUsername">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRegisterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilRegisterPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@color/colorWhite"
+        android:theme="@style/CustomEditTextStyle"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/colorWhite"
+        app:hintTextColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/tilRegisterEmail"
+        app:layout_constraintStart_toStartOf="@+id/tilRegisterEmail"
+        app:layout_constraintTop_toBottomOf="@id/tilRegisterEmail">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilRegisterConfirmPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@color/colorWhite"
+        android:theme="@style/CustomEditTextStyle"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/colorWhite"
+        app:hintTextColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/tilRegisterPassword"
+        app:layout_constraintStart_toStartOf="@+id/tilRegisterPassword"
+        app:layout_constraintTop_toBottomOf="@id/tilRegisterPassword">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/confirm_password_hint"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/nunito_semibold"
+        android:padding="12dp"
+        android:text="@string/create_account_hint"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tilRegisterConfirmPassword"
+        app:layout_constraintStart_toStartOf="@+id/tilRegisterConfirmPassword"
+        app:layout_constraintTop_toBottomOf="@id/tilRegisterConfirmPassword" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/QL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreateAccount"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvMoveToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/login_hint"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvQ"
+        app:layout_constraintTop_toTopOf="@+id/tvQ"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

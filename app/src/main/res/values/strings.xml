@@ -1,0 +1,16 @@
+<resources>
+    <string name="google_maps_key">add your key here</string>
+    <string name="app_name">Chat Room</string>
+    <string name="welcome_message">Welcome to</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_hint">Log In</string>
+    <string name="need_account_hint">Sign Up</string>
+    <string name="create_account_message">New Account</string>
+    <string name="username_hint">Username</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="create_account_hint">Sign Up</string>
+    <string name="QR">First time here? </string>
+    <string name="QL">Not the first time here? </string>
+    <string name="upload_pic">Upload a profile picture</string>
+</resources>
